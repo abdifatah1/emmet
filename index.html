@@ -25,15 +25,17 @@
     <h1>SYNTAX</h1>
     <table id="syntax" class="large-6 columns">
       <thead>
-        <th colspan="2">Child>, Sibling:+ and Climb-up: ^</th>
+        <tr>
+          <th colspan="2">Child>, Sibling:+ and Climb-up: ^</th>
+        </tr>
       </thead>
       <tr>
         <td>nav>ul>li</td>
         <td>
-          &ltnav&gt</br>
-          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+          &ltnav&gt<br/>
+          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
           &ltnav&gt
         </td>
       </tr>
@@ -41,8 +43,8 @@
       <tr>
         <td>div+p+bq</td>
         <td>
-          &ltdiv&gt&lt/div&gt </br>
-          &ltp&gt&ltp&gt</br>
+          &ltdiv&gt&lt/div&gt <br/>
+          &ltp&gt&ltp&gt<br/>
           &ltblockquote&gt&lt/blockquote&gt
         </td>
       </tr>
@@ -50,10 +52,10 @@
       <tr>
         <td>div+div>p>span+em^bq</td>
         <td>
-          &ltdiv&gt&lt/div&gt</br>
-          &ltdiv&gt</br>
-          &nbsp;&nbsp;&nbsp;&ltp&gt&ltspan&gt&lt/span&gt&ltem&gt&lt/em&gt&lt/p&gt</br>
-          &nbsp;&nbsp;&nbsp;&ltblockquote&gt&lt/blockquote&gt</br>
+          &ltdiv&gt&lt/div&gt<br/>
+          &ltdiv&gt<br/>
+          &nbsp;&nbsp;&nbsp;&ltp&gt&ltspan&gt&lt/span&gt&ltem&gt&lt/em&gt&lt/p&gt<br/>
+          &nbsp;&nbsp;&nbsp;&ltblockquote&gt&lt/blockquote&gt<br/>
           &lt/div&gt
         </td>
       </tr>
@@ -61,31 +63,32 @@
 
     <table class="large-6 columns">
       <thead>
-        <th colspan="2">Multiplication:* and Item numbering: $</th>
+        <tr>
+          <th colspan="2">Multiplication:* and Item numbering: $</th>
+        </tr>
       </thead>
       <tr>
         <td>ul>li*5</td>
         <td>
-          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
         </td>
       </tr>
 
       <tr>
         <td>ul>li.item$*5</td>
         <td>
-          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item1"&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item2"&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item3"&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item4"&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item5"&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item1"&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item3"&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item4"&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item5"&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
         </td>
       </tr>
 
@@ -96,7 +99,9 @@
   <div class="row">
     <table class="large-6 columns">
       <thead>
-        <th colspan="2">ID, CLASS and Custom attributes</th>
+        <tr>
+          <th colspan="2">ID, CLASS and Custom attributes</th>
+        </tr>
       </thead>
       <tr>
         <td>#header</td>
@@ -146,31 +151,33 @@
 
     <table class="large-6 columns">
       <thead>
-        <th colspan="2">Multiplication:* and Item numbering: $</th>
+        <tr>
+          <th colspan="2">Multiplication:* and Item numbering: $</th>
+        </tr>
       </thead>
       <tr>
         <td>ul>li*5</td>
         <td>
-          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
         </td>
       </tr>
 
       <tr>
         <td>ul>li.item$*5</td>
         <td>
-          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item1"&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item2"&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item3"&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item4"&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item5"&ltli&gt</br>
-          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item1"&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item2"&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item3"&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item4"&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item5"&ltli&gt<br/>
+          &nbsp;&nbsp;&nbsp;&ltul&gt<<br/>
         </td>
       </tr>
 
@@ -188,14 +195,14 @@
       <tr>
         <td>html:5 or !</td>
         <td>
-          &lt!DOCTYPE html&gt</br>
-          &lthtml lang="en"&gt</br>
-          &lthead&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltmeta charset="UTF-8" /&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gt&lt/title&gt</br>
-          &lt/head&gt</br>
-          &ltbody&gt</br>
-          &lt/body&gt</br>
+          &lt!DOCTYPE html&gt<br/>
+          &lthtml lang="en"&gt<br/>
+          &lthead&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltmeta charset="UTF-8" /&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gt&lt/title&gt<br/>
+          &lt/head&gt<br/>
+          &ltbody&gt<br/>
+          &lt/body&gt<br/>
           &lt/html&gt
         </td>
       </tr>
@@ -236,14 +243,14 @@
       <tr>
         <td>doc</td>
         <td>
-          &lt!DOCTYPE html&gt</br>
-          &lthtml lang="en"&gt</br>
-          &lthead&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltmeta charset="UTF-8" /&gt</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gt&lt/title&gt</br>
-          &lt/head&gt</br>
-          &ltbody&gt</br>
-          &lt/body&gt</br>
+          &lt!DOCTYPE html&gt<br/>
+          &lthtml lang="en"&gt<br/>
+          &lthead&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltmeta charset="UTF-8" /&gt<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gt&lt/title&gt<br/>
+          &lt/head&gt<br/>
+          &ltbody&gt<br/>
+          &lt/body&gt<br/>
           &lt/html&gt
         </td>
       </tr>
@@ -364,8 +371,8 @@
 
   <!-- fifth row stars here (CSS)-->
   <div class="row">
+    <h1 id="css">CSS</h1>
     <table class="large-6 columns">
-      <h1 id="css">CSS</h1>
       <tr>
         <td>pos</td>
         <td>position:relative</td>
@@ -416,9 +423,10 @@
         <td>b:a</td>
         <td>bottom:auto;</td>
       </tr>
-      <td>l</td>
-      <td>left:;</td>
-      </tr
+      <tr>
+        <td>l</td>
+        <td>left:;</td>
+      </tr>
       <tr>
         <td>l:a</td>
         <td>left:auto;</td>
@@ -580,77 +588,77 @@
         <tr>
           <td>bgr:rd</td>
           <td>background-repeat:round</td>
-          </tr
-        </table>
+        </tr>
+      </table>
 
-        <table class="large-6 columns">
+      <table class="large-6 columns">
 
-          <tr>
-            <td>bga</td>
-            <td>background-attachement:;</td>
-          </tr>
+        <tr>
+          <td>bga</td>
+          <td>background-attachement:;</td>
+        </tr>
 
-          <tr>
-            <td>bga:f</td>
-            <td>background-attachement:fixed;</td>
-          </tr>
+        <tr>
+          <td>bga:f</td>
+          <td>background-attachement:fixed;</td>
+        </tr>
 
-          <tr>
-            <td>bga:s</td>
-            <td>background-attachement:scroll;</td>
-          </tr>
+        <tr>
+          <td>bga:s</td>
+          <td>background-attachement:scroll;</td>
+        </tr>
 
-          <tr>
-            <td>bgp</td>
-            <td>background-position:0 0;</td>
-          </tr>
+        <tr>
+          <td>bgp</td>
+          <td>background-position:0 0;</td>
+        </tr>
 
-          <tr>
-            <td>bgp:x</td>
-            <td>background-positon:x</td>
-          </tr>
+        <tr>
+          <td>bgp:x</td>
+          <td>background-positon:x</td>
+        </tr>
 
-          <tr>
-            <td>bgp:y</td>
-            <td>background-positon:y</td>
-          </tr>
+        <tr>
+          <td>bgp:y</td>
+          <td>background-positon:y</td>
+        </tr>
 
-          <tr>
-            <td>bgbk:bb</td>
-            <td>background-break:bounding-box;</td>
-          </tr>
+        <tr>
+          <td>bgbk:bb</td>
+          <td>background-break:bounding-box;</td>
+        </tr>
 
-          <tr>
-            <td>bgbk:eb</td>
-            <td>background-break:each-box;</td>
-          </tr>
-          <tr>
-            <td>bgbk:c</td>
-            <td>background-break:continuous;</td>
-          </tr>
-          <tr>
-            <td>bgcp</td>
-            <td>background-clip:padding-box;</td>
-          </tr>
-          <tr>
-            <td>bgcp:bb</td>
-            <td>background-clip:border-box;</td>
-          </tr>
-          <tr>
-            <td>bgcp:cb</td>
-            <td>background-clip:content-box;</td>
-          </tr>
-          <tr id="bottom">
-            <td>bgcp:nc</td>
-            <td>background-clip:no-clip;</td>
-          </tr>
-        </table>
-      </div>
-      <!-- /sixth row ends here -->
+        <tr>
+          <td>bgbk:eb</td>
+          <td>background-break:each-box;</td>
+        </tr>
+        <tr>
+          <td>bgbk:c</td>
+          <td>background-break:continuous;</td>
+        </tr>
+        <tr>
+          <td>bgcp</td>
+          <td>background-clip:padding-box;</td>
+        </tr>
+        <tr>
+          <td>bgcp:bb</td>
+          <td>background-clip:border-box;</td>
+        </tr>
+        <tr>
+          <td>bgcp:cb</td>
+          <td>background-clip:content-box;</td>
+        </tr>
+        <tr id="bottom">
+          <td>bgcp:nc</td>
+          <td>background-clip:no-clip;</td>
+        </tr>
+      </table>
+    </div>
+    <!-- /sixth row ends here -->
 
-      <script src="js/vendor/jquery.js"></script>
-      <script src="js/vendor/what-input.js"></script>
-      <script src="js/vendor/foundation.js"></script>
-      <script src="js/app.js"></script>
-    </body>
-    </html>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+  </html>
