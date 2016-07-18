@@ -1,0 +1,18 @@
+body{
+  background-color: black;
+  color:white;
+}
+.menu{
+  font-size: 25px;
+  font-weight: bold;
+}
+a:hover{
+  color: orange;
+  font-size: 30px;
+  text-decoration: underline overline;
+}
+
+table{
+  color: black;
+  font-weight: bold;
+}
