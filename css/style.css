@@ -2,17 +2,37 @@ body{
   background-color: black;
   color:white;
 }
+/*menu*/
 .menu{
   font-size: 25px;
   font-weight: bold;
 }
-a:hover{
+
+/*menu links*/
+.menu a:hover{
   color: orange;
   font-size: 30px;
   text-decoration: underline overline;
 }
 
+/*tables*/
 table{
   color: black;
   font-weight: bold;
+}
+
+/*all headlines*/
+h1{
+  text-decoration: underline;
+}
+
+/*bottom to up*/
+.top{
+  position: fixed;
+  top:90%;
+  left:0;
+  background: black;
+  font-weight: bold;
+  font-size:25px;
+  text-decoration: underline;
 }
