@@ -7,63 +7,162 @@
   <title>Emmet CheatSheet</title>
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+  <!-- menu starts here -->
   <div class="menu-centered">
     <ul class="menu">
       <li><a href="#">Syntax</a></li>
       <li><a href="#">Html</a></li>
       <li><a href="#">Css</a></li>
     </ul>
-  </div>
+  </div><!-- menu ends here -->
+
+  <!-- first row starts here -->
   <div class="row">
-
     <table class="large-6 columns">
       <thead>
-        <tr>
-          <th>Syntax</th>
-          <th>child:></th></th></th>
-        </tr>
+        <th colspan="2">Child>, Sibling:+ and Climb-up: ^</th>
       </thead>
-      <tbody>
-        <tr>
-          <td>nav>ul>li</td>
-          <td>
-            &ltnav&gt
-            &ltul&gt
-            &ltli>&lt/li&gt
-            &lt/ul&gt
-            &lt/nav&gt
-          </td>
-        </tr>
-        <tr>
-          <td>Sibling:+</td>
-          <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-        </tr>
-      </tbody>
+      <tr>
+        <td>nav>ul>li</td>
+        <td>
+          &ltnav&gt</br>
+          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+          &ltnav&gt
+        </td>
+      </tr>
+
+      <tr>
+        <td>div+p+bq</td>
+        <td>
+          &ltdiv&gt&lt/div&gt </br>
+          &ltp&gt&ltp&gt</br>
+          &ltblockquote&gt&lt/blockquote&gt
+        </td>
+      </tr>
+
+      <tr>
+        <td>div+div>p>span+em^bq</td>
+        <td>
+          &ltdiv&gt&lt/div&gt</br>
+          &ltdiv&gt</br>
+          &nbsp;&nbsp;&nbsp;&ltp&gt&ltspan&gt&lt/span&gt&ltem&gt&lt/em&gt&lt/p&gt</br>
+          &nbsp;&nbsp;&nbsp;&ltblockquote&gt&lt/blockquote&gt</br>
+          &lt/div&gt </br>.</br>.
+        </td>
+      </tr>
     </table>
 
     <table class="large-6 columns">
       <thead>
-        <tr>
-          <th>Table Header</th>
-          <th>Table Header</th>
-        </tr>
+        <th colspan="2">Multiplication:* and Item numbering: $</th>
       </thead>
-      <tbody>
-        <tr>
-          <td>Content Goes Here</td>
-          <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-        </tr>
-        <tr>
-          <td>Content Goes Here</td>
-          <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-        </tr>
-      </tbody>
+      <tr>
+        <td>ul>li*5</td>
+        <td>
+          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+        </td>
+      </tr>
+
+      <tr>
+        <td>ul>li.item$*5</td>
+        <td>
+          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item1"&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item2"&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item3"&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item4"&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item5"&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+        </td>
+      </tr>
+
+      <tr>
+        <td>here</td>
+        <td>there</td>
+      </tr>
+    </table>
+  </div><!-- first row ends here -->
+
+  <!-- second row start here -->
+  <div class="row">
+    <table class="large-6 columns">
+      <thead>
+        <th colspan="2">ID and CLASS attributes</th>
+      </thead>
+      <tr>
+        <td>#header</td>
+        <td>&ltdiv id="header"&gt&lt/div&gt</td>
+      </tr>
+
+      <tr>
+        <td>.title</td>
+        <td>&ltdiv class="header"&gt&lt/div&gt</td>
+      </tr>
+
+      <tr>
+        <td>form#search.wide</td>
+        <td>
+          &ltdform id="search" class="wide"&gt&lt/form&gt
+        </td>
+      </tr>
+
+      <tr>
+        <td>p.class1.class2.class3</td>
+        <td>
+          &ltp class="class1" class="class2" class="class3"&gt&lt/p&gt
+        </td>
+      </tr>
+    </table>
+
+    <table class="large-6 columns">
+      <thead>
+        <th colspan="2">Multiplication:* and Item numbering: $</th>
+      </thead>
+      <tr>
+        <td>ul>li*5</td>
+        <td>
+          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+        </td>
+      </tr>
+
+      <tr>
+        <td>ul>li.item$*5</td>
+        <td>
+          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item1"&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item2"&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item3"&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item4"&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item5"&ltli&gt</br>
+          &nbsp;&nbsp;&nbsp;&ltul&gt</br>
+        </td>
+      </tr>
+
+      <tr>
+        <td>here</td>
+        <td>there</td>
+      </tr>
     </table>
   </div>
+
+
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>
   <script src="js/vendor/foundation.js"></script>
