@@ -8,20 +8,22 @@
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
   <!-- menu starts here -->
   <div class="menu-centered">
     <ul class="menu">
-      <li><a href="#">Syntax</a></li>
-      <li><a href="#">Html</a></li>
-      <li><a href="#">Css</a></li>
+      <li><a href="#syntax">Syntax</a></li>
+      <li><a href="#html">Html</a></li>
+      <li><a href="#css">Css</a></li>
     </ul>
   </div><!-- menu ends here -->
 
   <!-- first row starts here -->
   <div class="row">
-    <table class="large-6 columns">
+    <h1>SYNTAX</h1>
+    <table id="syntax" class="large-6 columns">
       <thead>
         <th colspan="2">Child>, Sibling:+ and Climb-up: ^</th>
       </thead>
@@ -52,7 +54,7 @@
           &ltdiv&gt</br>
           &nbsp;&nbsp;&nbsp;&ltp&gt&ltspan&gt&lt/span&gt&ltem&gt&lt/em&gt&lt/p&gt</br>
           &nbsp;&nbsp;&nbsp;&ltblockquote&gt&lt/blockquote&gt</br>
-          &lt/div&gt </br>.</br>.
+          &lt/div&gt
         </td>
       </tr>
     </table>
@@ -87,10 +89,6 @@
         </td>
       </tr>
 
-      <tr>
-        <td>here</td>
-        <td>there</td>
-      </tr>
     </table>
   </div><!-- first row ends here -->
 
@@ -98,7 +96,7 @@
   <div class="row">
     <table class="large-6 columns">
       <thead>
-        <th colspan="2">ID and CLASS attributes</th>
+        <th colspan="2">ID, CLASS and Custom attributes</th>
       </thead>
       <tr>
         <td>#header</td>
@@ -123,6 +121,27 @@
           &ltp class="class1" class="class2" class="class3"&gt&lt/p&gt
         </td>
       </tr>
+
+      <tr>
+        <td>p[title="Hello world"]</td>
+        <td>
+          &ltp title="Hello world"&gt&lt/p&gt
+        </td>
+      </tr>
+
+      <tr>
+        <td>td[rowspan=2 colspan=3 title]</td>
+        <td>
+          &lttd rowspan="2" colspan="3" title=""&gt&lt/td&gt
+        </td>
+      </tr>
+
+      <tr>
+        <td>[a='value1' b="value2"]</td>
+        <td>
+          &ltdiv a="value1" b="value2"/div&gt&lt/td&gt
+        </td>
+      </tr>
     </table>
 
     <table class="large-6 columns">
@@ -155,17 +174,483 @@
         </td>
       </tr>
 
+    </table>
+    <!-- button up -->
+    <a href="#" class="top">go up</a>
+
+  </div><!-- second row ends here -->
+
+  <!-- third row starts here (HTML)-->
+  <div class="row">
+    <h1 id="html">HTML</h1>
+    <table class="large-6 columns">
+
       <tr>
-        <td>here</td>
-        <td>there</td>
+        <td>html:5 or !</td>
+        <td>
+          &lt!DOCTYPE html&gt</br>
+          &lthtml lang="en"&gt</br>
+          &lthead&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltmeta charset="UTF-8" /&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gt&lt/title&gt</br>
+          &lt/head&gt</br>
+          &ltbody&gt</br>
+          &lt/body&gt</br>
+          &lt/html&gt
+        </td>
+      </tr>
+
+      <tr>
+        <td>a</td>
+        <td>&lta href=""&gt&lt/a&gt</td>
+      </tr>
+
+      <tr>
+        <td>a:link</td>
+        <td>&lta href="http://"&gt&lt/a&gt</td>
+      </tr>
+
+      <tr>
+        <td>a:mail</td>
+        <td>&lta href="mailto:"&gt&lt/a&gt</td>
+      </tr>
+
+      <tr>
+        <td>abbr</td>
+        <td>&ltabbr title=""&gt&lt/abbr&gt</td>
+      </tr>
+
+      <tr>
+        <td>input:text, input:t</td>
+        <td>&ltinput type="text" name="" id="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>input:search</td>
+        <td>&ltinput type="search" name="" id="" /&gt</td>
+      </tr>
+    </table>
+
+    <table class="large-6 columns">
+
+      <tr>
+        <td>doc</td>
+        <td>
+          &lt!DOCTYPE html&gt</br>
+          &lthtml lang="en"&gt</br>
+          &lthead&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltmeta charset="UTF-8" /&gt</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gt&lt/title&gt</br>
+          &lt/head&gt</br>
+          &ltbody&gt</br>
+          &lt/body&gt</br>
+          &lt/html&gt
+        </td>
+      </tr>
+
+      <tr>
+        <td>input:email</td>
+        <td>&ltinput type="email" name="" id="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>input:url</td>
+        <td>&ltinput type="url" name="" id="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>input:password, input:p</td>
+        <td>&ltinput type="password" name="" id="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>input:datetime</td>
+        <td>&ltinput type="datetime" name="" id="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>input:date</td>
+        <td>&ltinput type="date" name="" id="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>input:datetime-local</td>
+        <td>&ltinput type="datetime-local" name="" id="" /&gt</td>
+      </tr>
+
+    </table>
+  </div>
+  <!-- /third row ends here -->
+
+  <!-- fourth row starts here -->
+  <div class="row">
+    <table class="large-6 columns">
+      <tr>
+        <td>img</td>
+        <td>&ltimg src="" alt="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>img:srcset, img:s</td>
+        <td>&ltimg srcset="" src="" alt="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>img:sizes, img:z</td>
+        <td>&ltimg sizes="" srcset="" src="" alt="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>picture</td>
+        <td>&ltpicture&gt&lt/picture&gt</td>
+      </tr>
+
+      <tr>
+        <td>source:src, src:sc</td>
+        <td>&ltsource src="" type="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>source:media, src:m</td>
+        <td>&ltsource media="(min-width: )" srcset="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>iframe</td>
+        <td>&ltiframe src="" frameborder="0"&gt&lt/frame&gt</td>
+      </tr>
+    </table>
+
+    <table class="large-6 columns">
+
+      <tr>
+        <td>embed</td>
+        <td>&ltembed src="" type="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>object</td>
+        <td>&ltobject data="" type=""&gt&lt/object&gt</td>
+      </tr>
+
+      <tr>
+        <td>param</td>
+        <td>&ltparam name="" value="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>map</td>
+        <td>&ltmap name=""&gt&lt/map&gt</td>
+      </tr>
+
+      <tr>
+        <td>area</td>
+        <td>&ltarea shape="" coords="" href="" alt="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>area:d</td>
+        <td>&ltarea shape="default" coords="" href="" alt="" /&gt</td>
+      </tr>
+
+      <tr>
+        <td>area:c</td>
+        <td>&ltarea shape="circle" coords="" href="" alt="" /&gt</td>
+      </tr>
+
+    </table>
+  </div>
+  <!-- /fourth row ends here -->
+
+  <!-- fifth row stars here (CSS)-->
+  <div class="row">
+    <table class="large-6 columns">
+      <h1 id="css">CSS</h1>
+      <tr>
+        <td>pos</td>
+        <td>position:relative</td>
+      </tr>
+
+      <tr>
+        <td>pos:s</td>
+        <td>position:static</td>
+      </tr>
+
+      <tr>
+        <td>pos:a</td>
+        <td>position:absolute</td>
+      </tr>
+
+      <tr>
+        <td>pos:r</td>
+        <td>position:relative</td>
+      </tr>
+
+      <tr>
+        <td>pos:f</td>
+        <td>position:fixed</td>
+      </tr>
+
+      <tr>
+        <td>t</td>
+        <td>top: ;</td>
+      </tr>
+
+      <tr>
+        <td>t:a</td>
+        <td>top:auto;</td>
+      </tr>
+      <tr>
+        <td>r</td>
+        <td>right: ;</td>
+      </tr>
+      <tr>
+        <td>r:a</td>
+        <td>right:auto;</td>
+      </tr>
+      <tr>
+        <td>b</td>
+        <td>bottom:;</td>
+      </tr>
+      <tr>
+        <td>b:a</td>
+        <td>bottom:auto;</td>
+      </tr>
+      <td>l</td>
+      <td>left:;</td>
+      </tr
+      <tr>
+        <td>l:a</td>
+        <td>left:auto;</td>
+      </tr>
+      <tr>
+        <td>d:li</td>
+        <td>display:list-item</td>
+      </tr>
+      <tr>
+        <td>d:ri</td>
+        <td>display:run-in</td>
+      </tr>
+      <tr>
+        <td>d:cp</td>
+        <td>display:compact</td>
+      </tr>
+      <tr>
+        <td>d:itb</td>
+        <td>display:inline-table</td>
+      </tr>
+    </table>
+
+    <table class="large-6 columns">
+      <tr>
+        <td>z</td>
+        <td>z-index:;</td>
+      </tr>
+
+      <tr>
+        <td>z:a</td>
+        <td>z-index:auto</td>
+      </tr>
+
+      <tr>
+        <td>fl</td>
+        <td>float:;</td>
+      </tr>
+
+      <tr>
+        <td>fl:n</td>
+        <td>float:none</td>
+      </tr>
+
+      <tr>
+        <td>fl:l</td>
+        <td>float:left</td>
+      </tr>
+
+      <tr>
+        <td>fl:r</td>
+        <td>float:right</td>
+      </tr>
+
+      <tr>
+        <td>cl</td>
+        <td>clear:both</td>
+      </tr>
+      <tr>
+        <td>cl:n</td>
+        <td>clear:none</td>
+      </tr>
+      <tr>
+        <td>cl:l</td>
+        <td>clear:left</td>
+      </tr>
+      <tr>
+        <td>cl:r</td>
+        <td>clear:right</td>
+      </tr>
+      <tr>
+        <td>cl:b</td>
+        <td>clear:both</td>
+      </tr>
+      <tr>
+        <td>d</td>
+        <td>display:block</td>
+      </tr>
+      <tr>
+        <td>d:n</td>
+        <td>display:none</td>
+      </tr>
+      <tr>
+        <td>d:f</td>
+        <td>display:flex</td>
+      </tr>
+      <tr>
+        <td>d:i</td>
+        <td>display:inline</td>
+      </tr>
+      <tr>
+        <td>d:if</td>
+        <td>display:inline-flex</td>
+      </tr>
+      <tr>
+        <td>d:ib</td>
+        <td>display:inline-block</td>
       </tr>
     </table>
   </div>
+  <!-- /fifth row ends here -->
 
+  <!-- sixth row stars here -->
+  <div class="row">
+    <table class="large-6 columns">
+      <tr>
+        <td>bg</td>
+        <td>background:#000;</td>
+      </tr>
 
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
-</body>
-</html>
+      <tr>
+        <td>bg+</td>
+        <td>background:#fff url() 0 0 no-repeat;</td>
+      </tr>
+
+      <tr>
+        <td>bg:n</td>
+        <td>background:none;</td>
+      </tr>
+
+      <tr>
+        <td>bgc</td>
+        <td>background-color:#fff;</td>
+      </tr>
+
+      <tr>
+        <td>bgc:t</td>
+        <td>background-color:transparent;</td>
+      </tr>
+
+      <tr>
+        <td>bgi</td>
+        <td>background-image:url();</td>
+      </tr>
+
+      <tr>
+        <td>bgi:n</td>
+        <td>background-image:none</td>
+      </tr>
+      <tr>
+        <td>bgr</td>
+        <td>background-repeat: ;</td>
+      </tr>
+      <tr>
+        <td>bgr:n</td>
+        <td>bacground-repeat:none;</td>
+      </tr>
+      <tr>
+        <td>bgr:x</td>
+        <td>background-repeat:repeat-x</td>
+      </tr>
+      <tr>
+        <td>bgr:y</td>
+        <td>background-repeat:repeat-y</td>
+      </tr>
+      <tr>
+        <td>bgr:sp</td>
+        <td>background-repeat:space</td>
+        </tr
+        <tr>
+          <td>bgr:rd</td>
+          <td>background-repeat:round</td>
+          </tr
+        </table>
+
+        <table class="large-6 columns">
+
+          <tr>
+            <td>bga</td>
+            <td>background-attachement:;</td>
+          </tr>
+
+          <tr>
+            <td>bga:f</td>
+            <td>background-attachement:fixed;</td>
+          </tr>
+
+          <tr>
+            <td>bga:s</td>
+            <td>background-attachement:scroll;</td>
+          </tr>
+
+          <tr>
+            <td>bgp</td>
+            <td>background-position:0 0;</td>
+          </tr>
+
+          <tr>
+            <td>bgp:x</td>
+            <td>background-positon:x</td>
+          </tr>
+
+          <tr>
+            <td>bgp:y</td>
+            <td>background-positon:y</td>
+          </tr>
+
+          <tr>
+            <td>bgbk:bb</td>
+            <td>background-break:bounding-box;</td>
+          </tr>
+
+          <tr>
+            <td>bgbk:eb</td>
+            <td>background-break:each-box;</td>
+          </tr>
+          <tr>
+            <td>bgbk:c</td>
+            <td>background-break:continuous;</td>
+          </tr>
+          <tr>
+            <td>bgcp</td>
+            <td>background-clip:padding-box;</td>
+          </tr>
+          <tr>
+            <td>bgcp:bb</td>
+            <td>background-clip:border-box;</td>
+          </tr>
+          <tr>
+            <td>bgcp:cb</td>
+            <td>background-clip:content-box;</td>
+          </tr>
+          <tr id="bottom">
+            <td>bgcp:nc</td>
+            <td>background-clip:no-clip;</td>
+          </tr>
+        </table>
+      </div>
+      <!-- /sixth row ends here -->
+
+      <script src="js/vendor/jquery.js"></script>
+      <script src="js/vendor/what-input.js"></script>
+      <script src="js/vendor/foundation.js"></script>
+      <script src="js/app.js"></script>
+    </body>
+    </html>
