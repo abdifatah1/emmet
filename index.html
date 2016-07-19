@@ -12,13 +12,13 @@
 </head>
 <body>
   <!-- menu starts here -->
-  <div class="menu-centered">
+  <nav class="menu-centered">
     <ul class="menu">
       <li><a href="#syntax">Syntax</a></li>
       <li><a href="#html">Html</a></li>
       <li><a href="#css">Css</a></li>
     </ul>
-  </div><!-- menu ends here -->
+  </nav><!-- menu ends here -->
 
   <!-- first row starts here -->
   <div class="row">
@@ -32,31 +32,33 @@
       <tr>
         <td>nav>ul>li</td>
         <td>
-          &ltnav&gt<br/>
-          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
-          &ltnav&gt
+          &lt;nav&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;ul&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;ul&gt;<br/>
+          &lt;nav&gt;
         </td>
       </tr>
 
       <tr>
         <td>div+p+bq</td>
         <td>
-          &ltdiv&gt&lt/div&gt <br/>
-          &ltp&gt&ltp&gt<br/>
-          &ltblockquote&gt&lt/blockquote&gt
+          <p>&lt;div&gt&lt;/div&gt; </p>
+          <p>&lt;p&gt&lt;p&gt;</p>
+          <p>&lt;blockquote&gt;&lt;/blockquote&gt;</p>
+          <p>.</p>
         </td>
       </tr>
 
       <tr>
         <td>div+div>p>span+em^bq</td>
         <td>
-          &ltdiv&gt&lt/div&gt<br/>
-          &ltdiv&gt<br/>
-          &nbsp;&nbsp;&nbsp;&ltp&gt&ltspan&gt&lt/span&gt&ltem&gt&lt/em&gt&lt/p&gt<br/>
-          &nbsp;&nbsp;&nbsp;&ltblockquote&gt&lt/blockquote&gt<br/>
-          &lt/div&gt
+          <p>&lt;div&gt;&lt;/div&gt;</p>
+          <p>&lt;div&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&lt;p&gt;&ltspan&gt;&lt;/span&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&lt;blockquote&gt;&lt;/blockquote&gt;</p>
+          <p>&lt;/div&gt;</p>
+          <p>.</p>
         </td>
       </tr>
     </table>
@@ -70,25 +72,25 @@
       <tr>
         <td>ul>li*5</td>
         <td>
-          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
+          <p>&nbsp;&nbsp;&nbsp;&lt;ul&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&lt;ul&gt;</p>
         </td>
       </tr>
 
       <tr>
         <td>ul>li.item$*5</td>
         <td>
-          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item1"&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item3"&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item4"&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item5"&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
+          <p>&nbsp;&nbsp;&nbsp;&lt;ul&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;class="item1"&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;class="item3"&lt;li&gt;<</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;class="item4"&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;class="item5"&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&ltul&gt</p>
         </td>
       </tr>
 
@@ -105,48 +107,93 @@
       </thead>
       <tr>
         <td>#header</td>
-        <td>&ltdiv id="header"&gt&lt/div&gt</td>
+        <td>&lt;div id="header"&gt;&lt;/div&gt;</td>
       </tr>
 
       <tr>
         <td>.title</td>
-        <td>&ltdiv class="header"&gt&lt/div&gt</td>
+        <td>&lt;div class="header"&gt;&lt;/div&gt;</td>
       </tr>
 
       <tr>
         <td>form#search.wide</td>
         <td>
-          &ltdform id="search" class="wide"&gt&lt/form&gt
+          &lt;dform id="search" class="wide"&gt;&lt;/form&gt;
         </td>
       </tr>
 
       <tr>
+        <td>a{Click me}</td>
+        <td>
+          &lt;a href=""&gt;Click me&lt;/a&gt;
+        </td>
+      </tr>
+
+
+      <tr>
         <td>p.class1.class2.class3</td>
         <td>
-          &ltp class="class1" class="class2" class="class3"&gt&lt/p&gt
+          &lt;p class="class1" class="class2" class="class3"&gt;&lt;/p&gt;
         </td>
       </tr>
 
       <tr>
         <td>p[title="Hello world"]</td>
         <td>
-          &ltp title="Hello world"&gt&lt/p&gt
+          &lt;p title="Hello world"&gt;&lt;/p&gt;
         </td>
       </tr>
 
       <tr>
         <td>td[rowspan=2 colspan=3 title]</td>
         <td>
-          &lttd rowspan="2" colspan="3" title=""&gt&lt/td&gt
+          &lt;td rowspan="2" colspan="3" title=""&gt;&lt;/td&gt;
         </td>
       </tr>
 
       <tr>
         <td>[a='value1' b="value2"]</td>
         <td>
-          &ltdiv a="value1" b="value2"/div&gt&lt/td&gt
+          &lt;div a="value1" b="value2"/div&gt;&lt;/td&gt;
         </td>
       </tr>
+
+      <tr>
+        <td>p>{Click }+a{here}+{ to continue}</td>
+        <td>
+          &lt;p&gt;click&lt;a href=""&gt;here&lt;/a&gt;to continue&lt;/p&gt;
+        </td>
+      </tr>
+
+      <tr>
+        <td>.class</td>
+        <td>
+          &lt;div class="class"&gt;&lt;/div&gt;
+        </td>
+      </tr>
+
+      <tr>
+        <td>ul>.class</td>
+        <td>
+          &lt;ul&gt;
+          &lt;li class="class"&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        </td>
+      </tr>
+
+      <tr>
+        <td>table>.row>.col</td>
+        <td>
+          &lt;table&gt;
+          &lt;tr class="row"&gt;
+          &lt;td class="row"&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;/table&gt;
+        </td>
+      </tr>
+
+
+
     </table>
 
     <table class="large-6 columns">
@@ -158,26 +205,26 @@
       <tr>
         <td>ul>li*5</td>
         <td>
-          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
+          <p>&nbsp;&nbsp;&nbsp;&lt;ul&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&lt;ul&gt;</p>
         </td>
       </tr>
 
       <tr>
         <td>ul>li.item$*5</td>
         <td>
-          &nbsp;&nbsp;&nbsp;&ltul&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item1"&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item2"&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item3"&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item4"&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtclass="item5"&ltli&gt<br/>
-          &nbsp;&nbsp;&nbsp;&ltul&gt<<br/>
+          <p>&nbsp;&nbsp;&nbsp;&lt;ul&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tli&gt;class="item1"&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;class="item2"&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;class="item3"&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;class="item4"&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&&lt;li&gt;class="item5"&lt;li&gt;</p>
+          <p>&nbsp;&nbsp;&nbsp;&lt;ul&gt;</p>
         </td>
       </tr>
 
@@ -195,46 +242,46 @@
       <tr>
         <td>html:5 or !</td>
         <td>
-          &lt!DOCTYPE html&gt<br/>
-          &lthtml lang="en"&gt<br/>
-          &lthead&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltmeta charset="UTF-8" /&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gt&lt/title&gt<br/>
-          &lt/head&gt<br/>
-          &ltbody&gt<br/>
-          &lt/body&gt<br/>
-          &lt/html&gt
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8" /&gt;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
         </td>
       </tr>
 
       <tr>
         <td>a</td>
-        <td>&lta href=""&gt&lt/a&gt</td>
+        <td>&lt;a href=""&gt;&lt;/a&gt;</td>
       </tr>
 
       <tr>
         <td>a:link</td>
-        <td>&lta href="http://"&gt&lt/a&gt</td>
+        <td>&lt;a href="http://"&gt;&lt;/a&gt;</td>
       </tr>
 
       <tr>
         <td>a:mail</td>
-        <td>&lta href="mailto:"&gt&lt/a&gt</td>
+        <td>&lt;a href="mailto:"&gt;&lt;/a&gt;</td>
       </tr>
 
       <tr>
         <td>abbr</td>
-        <td>&ltabbr title=""&gt&lt/abbr&gt</td>
+        <td>&lt;abbr title=""&gt;&lt;/abbr&gt;</td>
       </tr>
 
       <tr>
         <td>input:text, input:t</td>
-        <td>&ltinput type="text" name="" id="" /&gt</td>
+        <td>&;ltinput type="text" name="" id="" /&gt;</td>
       </tr>
 
       <tr>
         <td>input:search</td>
-        <td>&ltinput type="search" name="" id="" /&gt</td>
+        <td>&lt;input type="search" name="" id="" /&gt;</td>
       </tr>
     </table>
 
@@ -243,46 +290,46 @@
       <tr>
         <td>doc</td>
         <td>
-          &lt!DOCTYPE html&gt<br/>
-          &lthtml lang="en"&gt<br/>
-          &lthead&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltmeta charset="UTF-8" /&gt<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gt&lt/title&gt<br/>
-          &lt/head&gt<br/>
-          &ltbody&gt<br/>
-          &lt/body&gt<br/>
-          &lt/html&gt
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8" /&gt;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
         </td>
       </tr>
 
       <tr>
         <td>input:email</td>
-        <td>&ltinput type="email" name="" id="" /&gt</td>
+        <td>&lt;input type="email" name="" id="" /&gt;</td>
       </tr>
 
       <tr>
         <td>input:url</td>
-        <td>&ltinput type="url" name="" id="" /&gt</td>
+        <td>&lt;input type="url" name="" id="" /&gt;</td>
       </tr>
 
       <tr>
         <td>input:password, input:p</td>
-        <td>&ltinput type="password" name="" id="" /&gt</td>
+        <td>&;ltinput type="password" name="" id="" /&gt;</td>
       </tr>
 
       <tr>
         <td>input:datetime</td>
-        <td>&ltinput type="datetime" name="" id="" /&gt</td>
+        <td>&lt;input type="datetime" name="" id="" /&gt;</td>
       </tr>
 
       <tr>
         <td>input:date</td>
-        <td>&ltinput type="date" name="" id="" /&gt</td>
+        <td>&lt;input type="date" name="" id="" /&gt;</td>
       </tr>
 
       <tr>
         <td>input:datetime-local</td>
-        <td>&ltinput type="datetime-local" name="" id="" /&gt</td>
+        <td>&lt;input type="datetime-local" name="" id="" /&gt;</td>
       </tr>
 
     </table>
@@ -294,37 +341,37 @@
     <table class="large-6 columns">
       <tr>
         <td>img</td>
-        <td>&ltimg src="" alt="" /&gt</td>
+        <td>&lt;img src="" alt="" /&gt;</td>
       </tr>
 
       <tr>
         <td>img:srcset, img:s</td>
-        <td>&ltimg srcset="" src="" alt="" /&gt</td>
+        <td>&lt;img srcset="" src="" alt="" /&gt;</td>
       </tr>
 
       <tr>
         <td>img:sizes, img:z</td>
-        <td>&ltimg sizes="" srcset="" src="" alt="" /&gt</td>
+        <td>&lt;img sizes="" srcset="" src="" alt="" /&gt;</td>
       </tr>
 
       <tr>
         <td>picture</td>
-        <td>&ltpicture&gt&lt/picture&gt</td>
+        <td>&lt;picture&gt;&lt;/picture&gt;</td>
       </tr>
 
       <tr>
         <td>source:src, src:sc</td>
-        <td>&ltsource src="" type="" /&gt</td>
+        <td>&lt;source src="" type="" /&gt;</td>
       </tr>
 
       <tr>
         <td>source:media, src:m</td>
-        <td>&ltsource media="(min-width: )" srcset="" /&gt</td>
+        <td>&lt;source media="(min-width: )" srcset="" /&gt;</td>
       </tr>
 
       <tr>
         <td>iframe</td>
-        <td>&ltiframe src="" frameborder="0"&gt&lt/frame&gt</td>
+        <td>&lt;;iframe src="" frameborder="0"&gt;&lt;/frame&gt;</td>
       </tr>
     </table>
 
@@ -332,37 +379,37 @@
 
       <tr>
         <td>embed</td>
-        <td>&ltembed src="" type="" /&gt</td>
+        <td>&lt;embed src="" type="" /&gt;</td>
       </tr>
 
       <tr>
         <td>object</td>
-        <td>&ltobject data="" type=""&gt&lt/object&gt</td>
+        <td>&lt;object data="" type=""&gt;&lt;/object&gt;</td>
       </tr>
 
       <tr>
         <td>param</td>
-        <td>&ltparam name="" value="" /&gt</td>
+        <td>&lt;param name="" value="" /&gt;</td>
       </tr>
 
       <tr>
         <td>map</td>
-        <td>&ltmap name=""&gt&lt/map&gt</td>
+        <td>&lt;map name=""&gt;&lt;/map&gt;</td>
       </tr>
 
       <tr>
         <td>area</td>
-        <td>&ltarea shape="" coords="" href="" alt="" /&gt</td>
+        <td>&lt;area shape="" coords="" href="" alt="" /&gt;</td>
       </tr>
 
       <tr>
         <td>area:d</td>
-        <td>&ltarea shape="default" coords="" href="" alt="" /&gt</td>
+        <td>&lt;area shape="default" coords="" href="" alt="" /&gt;</td>
       </tr>
 
       <tr>
         <td>area:c</td>
-        <td>&ltarea shape="circle" coords="" href="" alt="" /&gt</td>
+        <td>&lt;area shape="circle" coords="" href="" alt="" /&gt;</td>
       </tr>
 
     </table>
@@ -584,81 +631,81 @@
       <tr>
         <td>bgr:sp</td>
         <td>background-repeat:space</td>
-        </tr
-        <tr>
-          <td>bgr:rd</td>
-          <td>background-repeat:round</td>
-        </tr>
-      </table>
+      </tr>
+      <tr>
+        <td>bgr:rd</td>
+        <td>background-repeat:round</td>
+      </tr>
+    </table>
 
-      <table class="large-6 columns">
+    <table class="large-6 columns">
 
-        <tr>
-          <td>bga</td>
-          <td>background-attachement:;</td>
-        </tr>
+      <tr>
+        <td>bga</td>
+        <td>background-attachement:;</td>
+      </tr>
 
-        <tr>
-          <td>bga:f</td>
-          <td>background-attachement:fixed;</td>
-        </tr>
+      <tr>
+        <td>bga:f</td>
+        <td>background-attachement:fixed;</td>
+      </tr>
 
-        <tr>
-          <td>bga:s</td>
-          <td>background-attachement:scroll;</td>
-        </tr>
+      <tr>
+        <td>bga:s</td>
+        <td>background-attachement:scroll;</td>
+      </tr>
 
-        <tr>
-          <td>bgp</td>
-          <td>background-position:0 0;</td>
-        </tr>
+      <tr>
+        <td>bgp</td>
+        <td>background-position:0 0;</td>
+      </tr>
 
-        <tr>
-          <td>bgp:x</td>
-          <td>background-positon:x</td>
-        </tr>
+      <tr>
+        <td>bgp:x</td>
+        <td>background-positon:x</td>
+      </tr>
 
-        <tr>
-          <td>bgp:y</td>
-          <td>background-positon:y</td>
-        </tr>
+      <tr>
+        <td>bgp:y</td>
+        <td>background-positon:y</td>
+      </tr>
 
-        <tr>
-          <td>bgbk:bb</td>
-          <td>background-break:bounding-box;</td>
-        </tr>
+      <tr>
+        <td>bgbk:bb</td>
+        <td>background-break:bounding-box;</td>
+      </tr>
 
-        <tr>
-          <td>bgbk:eb</td>
-          <td>background-break:each-box;</td>
-        </tr>
-        <tr>
-          <td>bgbk:c</td>
-          <td>background-break:continuous;</td>
-        </tr>
-        <tr>
-          <td>bgcp</td>
-          <td>background-clip:padding-box;</td>
-        </tr>
-        <tr>
-          <td>bgcp:bb</td>
-          <td>background-clip:border-box;</td>
-        </tr>
-        <tr>
-          <td>bgcp:cb</td>
-          <td>background-clip:content-box;</td>
-        </tr>
-        <tr id="bottom">
-          <td>bgcp:nc</td>
-          <td>background-clip:no-clip;</td>
-        </tr>
-      </table>
-    </div>
-    <!-- /sixth row ends here -->
+      <tr>
+        <td>bgbk:eb</td>
+        <td>background-break:each-box;</td>
+      </tr>
+      <tr>
+        <td>bgbk:c</td>
+        <td>background-break:continuous;</td>
+      </tr>
+      <tr>
+        <td>bgcp</td>
+        <td>background-clip:padding-box;</td>
+      </tr>
+      <tr>
+        <td>bgcp:bb</td>
+        <td>background-clip:border-box;</td>
+      </tr>
+      <tr>
+        <td>bgcp:cb</td>
+        <td>background-clip:content-box;</td>
+      </tr>
+      <tr id="bottom">
+        <td>bgcp:nc</td>
+        <td>background-clip:no-clip;</td>
+      </tr>
+    </table>
+  </div>
+  <!-- /sixth row ends here -->
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
-  </html>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
